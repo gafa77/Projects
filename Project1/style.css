@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes full height */
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #333;
+    color: white;
+    padding: 10px; /* Existing padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between nav links and auth buttons */
+    align-items: center; /* Center items vertically */
+}
+
+.auth-buttons {
+    margin-top: 10px; /* Add margin above the buttons */
+    margin-bottom: 10px; /* Add margin below the buttons */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.auth-buttons {
+    float: right;
+}
+
+.auth-buttons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px; /* Space between buttons */
+    padding:5px 15px; /* Padding for buttons */
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Add margin below the buttons */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Allow main to grow and push footer down */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.dark-mode header {
+    background: #0056b3;
+}
+
+body.dark-mode nav {
+    background: #222;
+}
+
+/* Toggle Button Styles */
+#toggle-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Add some space above the button */
+}
+
+#toggle-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Additional Styles for Disclaimer */
+.disclaimer {
+    position: relative;
+    display: block; /* Change to block to ensure it appears on the next line */
+    cursor: pointer;
+    color: red; /* Change color to red */
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 20px; /* Add some space above */
+  }
+
+  .disclaimer-message {
+    visibility: hidden;
+    width: 300px;
+    background-color: #fff;
+    color: #333;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%; /* Position above the link */
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s ease-in-out;
+  }
+
+  .disclaimer:hover .disclaimer-message {
+    visibility: visible;
+    opacity: 1;
+  }
