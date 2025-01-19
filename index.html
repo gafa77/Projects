@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parth's Website</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>Your one-stop solution for all your needs</p>
+  </header>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="./Public/about.html">About</a></li>
+      <li><a href="./Public/contact.html">Contact</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="./logins/login.html" class="login">Login</a>
+      <a href="./logins/register.html" class="register">Register</a>
+    </div>
+  </nav>
+
+  <main>
+    <h2>Welcome to my website</h2>
+    <p>This is a simple website where you can find various resources and information.</p>
+    <button onclick="addCSS()" id="toggle-button">Toggle Dark Mode</button>
+    <div class="disclaimer">
+      Disclaimer
+      <div class="disclaimer-message">
+        All code use for this is not completely written by me. I have used various resources to complete this project. <br>70 % of the code is written by me and 30% is taken from other source as reference.
+        <br>source: Blackbox.ai
+  </main>
+
+  <footer>
+    <p>Copyright © 2025 Parth Badgujar. All rights reserved.</p>
+  </footer>
+
+  <script>
+    let counter = 0;
+    function addCSS() {
+      counter += 1;
+      if (counter % 2 !== 0) {
+        document.body.classList.add("dark-mode");
+      } else {
+        document.body.classList.remove("dark-mode");
+      }
+    }
+  </script>
+</body>
+
+</html>

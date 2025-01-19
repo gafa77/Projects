@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  background-image: url("painting-mountain-lake-with-mountain-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Cover the entire background */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  min-height: 100vh; /* Ensure the body takes full height */
+  background-color: #f0f0f0;
+}
+
+header nav {
+  background-color: #333;
+  padding: 15px;
+  text-align: center;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-family: Arial, sans-serif;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #ddd;
+}
+
+h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+div.main {
+  width: 400px;
+  margin: 100px auto 0; /* Center the main div */
+  margin-top: 20px;
+}
+
+div.register {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+form#register {
+  margin: 40px;
+}
+
+label {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Full width for input fields */
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: 0;
+  padding: 5px;
+  background-color: #fff;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+input#submit,
+input#reset {
+  width: 48%; /* Adjust width for buttons */
+  padding: 7px;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  background-color: rgba(250, 100, 0, 0.8);
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+input#reset {
+  background-color: rgb(228, 21, 21, 0.8);
+}
+
+input#submit:hover,
+input#reset:hover {
+  box-shadow: 2px 2px 25px;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.register-link a{
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+
+
+footer {
+  text-align: center;
+  font-weight: 549;
+  cursor: pointer;
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+footer:hover {
+  font-weight: 900;
+}

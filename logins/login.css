@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the body takes full height */
+    background-color: #f0f0f0;
+    margin: 0; /* Remove default margin */
+}
+
+header {
+    width: 100%; /* Full width for the header */
+}
+
+header nav {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ddd;
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px 0; /* Space between the nav and login box */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px; /* Added border-radius for input fields */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px; /* Added border-radius for button */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added transition for button hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.register-link {
+    margin-top: 20px;
+    text-align: center; /* Center align the register link */
+}
+
+.register-link a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+footer {
+    width: 100%; /* Full width for the footer */
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    position: absolute; /* Position footer at the bottom */
+    bottom: 0; /* Align to the bottom */
+}
